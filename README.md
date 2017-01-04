@@ -1,6 +1,6 @@
 # Mongo Todo List
 
-In this Lab, you'll take a basic TODO application that saves TODOs to a JSON file and you'll replace it with Mongoose to instead save the TODOs to Mongo Database.
+In this Lab, you'll take a basic TODO application that saves TODOs to a JSON file and you'll replace it with [Mongoose](https://jeremiahalex.gitbooks.io/wdi-sg/content/05-express/express-mongoose/readme.html) to instead save the TODOs to a Mongo Database.
 
 ## Getting Started
 
