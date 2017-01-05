@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Mongo/Mongoose Todo List",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "start": "node index.js",
     "test": "node test/todo_tests.js"
