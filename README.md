@@ -14,6 +14,8 @@ You can use the build in REPL to test your functionality.
 
 Add a Mongoose schema and model to your `models/todo.js` file. Then fill in the CRUD actions in your `controllers/todo_controller.js` to interact with your Mongoose Todo Model.
 
+__Warning__: Mongoose is Asynchronous, so we'll need to use callbacks to wait for data to save.
+
 ## Bonus
 
 Use Mongoose Validations to ensure that only valid TODOs are saved.
