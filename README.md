@@ -1,19 +1,18 @@
 # Mongo Todo List
 
-In this Lab, you'll take a basic TODO application that saves TODOs to a JSON file and you'll replace it with [Mongoose](https://jeremiahalex.gitbooks.io/wdi-sg/content/05-express/express-mongoose/readme.html) to instead save the TODOs to a Mongo Database.
+We've learnt how to create CRUD actions and how to save them to a file. In this Lab, we'll instead save them to a Mongo Database database using [Mongoose](https://jeremiahalex.gitbooks.io/wdi-sg/content/05-express/express-mongoose/readme.html).
+
+You can use the build in REPL to test your functionality.
 
 ## Getting Started
 
 * Fork and clone this repository
 * Run `npm install` to install dependencies
-* `npm test` - run test suite
 * `npm start` - run the REPL
 
 ##Requirements
 
-Remove the todos array completely and use Mongoose methods in all of the CRUD functions.
-
-You can define the TODO Schema in the same `models/todo.js` file.
+Add a Mongoose schema and model to your `models/todo.js` file. Then fill in the CRUD actions in your `controllers/todo_controller.js` to interact with your Mongoose Todo Model.
 
 ## Bonus
 

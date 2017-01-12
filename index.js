@@ -1,4 +1,4 @@
-const todos = require('./models/todo.js')
+const todos = require('./controllers/todos_controller.js')
 const readline = require('readline')
 const rl = readline.createInterface(process.stdin, process.stdout)
 const prefix = '> '
@@ -6,7 +6,7 @@ const prefix = '> '
 // This helper function simply console logs all of the supported commands
 function displayHelp () {
   console.log('Please input one of the following commands')
-  console.log(' "create [name] [description] [completed]" will create a new todo')
+  console.log(' "create [one-word-name] [one-word-description] [completed]" will create a new todo')
   console.log(' "list" will list all todos')
   console.log(' "show [id]" will show the TODO with the given id')
   console.log(' "update [id] [name] [description] [completed]" will update the TODO with the given id')
@@ -28,26 +28,22 @@ rl.on('line', (line) => {
   switch (words[0]) {
     case 'create':
       // we use the 2nd, 3rd & 4th words the user input as the name, description and completed status of our new todo
-      success = todos.create({name: words[1], description: words[2], completed: words[3]})
-      console.log('TODO creation ' + successMessage(success))
+      todos.create({name: words[1], description: words[2], completed: words[3]})
       break
     case 'list':
-      console.log(todos.list())
+      todos.list()
       break
     case 'show':
-      console.log(todos.show(words[1]))
+      todos.show(words[1])
       break
     case 'update':
-      success = todos.update(words[1], {name: words[2], description: words[3], completed: words[4]})
-      console.log('TODO update ' + successMessage(success))
+      todos.update(words[1], {name: words[2], description: words[3], completed: words[4]})
       break
     case 'destroy':
-      success = todos.destroy(words[1])
-      console.log('TODO destroy ' + successMessage(success))
+      todos.destroy(words[1])
       break
     case 'destroyAll':
-      success = todos.destroyAll()
-      console.log('TODO destroy ' + successMessage(success))
+      todos.destroyAll()
       break
     case 'quit':
       rl.close()
