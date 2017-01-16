@@ -3,9 +3,10 @@
 This is Part 2 of a series of labs working towards building your first full stack web app. 
 
 - [Part 1 - TDD todo list](https://github.com/wdi-sg/tdd-todo-list)
-- Part 2 - Mongo todo list (this repo)
-- [Part 3 - Express todo list](https://github.com/wdi-sg/express-todo-list-pt1)
-- Part 4 - to come
+- (this repo)
+- [Part 3 - Express todo list pt1](https://github.com/wdi-sg/express-todo-list-pt1)
+- (optional) [Part 3.1 - Mocha, Chai and Supertest todo list](https://github.com/wdi-sg/mocha-todo-list)
+- [Part 4 - Express todo list pt2](https://github.com/wdi-sg/express-todo-list-pt2)
 
 We've learnt how to create CRUD actions and how to save them to a file. In this Lab, we'll instead save them to a Mongo Database database using [Mongoose](https://jeremiahalex.gitbooks.io/wdi-sg/content/05-express/express-mongoose/readme.html).
 
